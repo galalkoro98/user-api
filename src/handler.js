@@ -13,7 +13,7 @@ export const startApp = (userNames) => {
       container.style.display = "none";
     } else {
       errorMessage.style.display = "none";
-      container.style.display = "grid";
+      container.style.display = "flex";
       container.innerHTML = createUser();
     }
   }, 1000);

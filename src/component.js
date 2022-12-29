@@ -1,4 +1,5 @@
 import { userData } from "./logic.js";
+
 let userCards;
 export const createUser = () => {
   userCards = `<div class="container-info">

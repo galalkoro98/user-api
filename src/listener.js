@@ -3,8 +3,8 @@ import { container } from "./template.js";
 import { searchButton } from "./template.js";
 import { searchInput } from "./template.js";
 
-let userNames;
 searchButton.addEventListener("click", (event) => {
+  let userNames;
   event.preventDefault();
   userNames = searchInput.value.toLowerCase();
   startApp(userNames);
