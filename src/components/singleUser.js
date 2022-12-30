@@ -1,8 +1,14 @@
-import { userData } from "./logic.js";
+import { userData } from "../logic/singleUser.js";
+import { err } from "../logic/singleUser.js";
 
-let userCards;
+
 export const createUser = () => {
-  userCards = `<div class="container-info">
+  if (err) {
+    
+    return err;
+  } else {
+    let userCards;
+    userCards = `<div class="container-info">
       
       <div class="container-div">
       <div class="user-info">
@@ -55,5 +61,6 @@ export const createUser = () => {
     
       </div>
       `;
-  return userCards;
+    return userCards;
+  }
 };

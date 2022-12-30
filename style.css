@@ -118,10 +118,12 @@ body {
 
 
 .error {
-  display: none;
+  /* display: none; */
   font-size: 1.5em;
   color: red;
 }
+
+
 
 .user-container {
   width: 100%;
@@ -148,15 +150,7 @@ body {
 
 }
 
-/* .user-info ul{
-  height: 20vh;
-  
-}
 
-.geo-info ul{
-    height: 20vh;
-
-} */
 
 .container-div ul{
   padding: 1em;
@@ -186,15 +180,13 @@ h2{
 
 
 
-.fade {
-  animation: fadeEfect 4s;
-}
+
 
 
 
 @media(min-width: 758px) {
   .user { 
-    flex-direction: row;  
+    flex-direction: column;  
   }
 }
 
